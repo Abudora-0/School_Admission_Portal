@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery — Bright Future Public School</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="imgs/favicon.svg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ===== Header ===== -->
+    <header class="header">
+        <div class="container nav-container">
+            <h1 class="logo">Bright Future Public School</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== Gallery Hero ===== -->
+    <section class="gallery-hero">
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="container gallery-hero-grid">
+            <div class="gallery-hero-text">
+                <span class="about-badge">School Life</span>
+                <div>Moments from Bright Future</div>
+                <p>Explore campus life, facilities, events, and student activities. Click an image to view it larger.</p>
+
+                <div class="gallery-filters" role="tablist" aria-label="Gallery filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="campus">Campus</button>
+                    <button class="filter-btn" data-filter="facilities">Facilities</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                    <button class="filter-btn" data-filter="students">Students</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Gallery Grid ===== -->
+    <section class="container" style="padding: 60px 0;">
+        <div class="gallery-grid" id="galleryGrid">
+
+            <div class="gallery-item" data-category="campus">
+                <img src="imgs/main_campus.jpg" alt="Main campus building">
+                <div class="overlay">
+                    <div class="caption">Main Campus</div>
+                    <div class="sub">Bright Future campus</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="facilities">
+                <img src="imgs/lab.jpg" alt="Science lab">
+                <div class="overlay">
+                    <div class="caption">Science Lab</div>
+                    <div class="sub">Well-equipped labs</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="students">
+                <img src="imgs/classroom.jpg" alt="Students in class">
+                <div class="overlay">
+                    <div class="caption">In-Class Activity</div>
+                    <div class="sub">Interactive learning</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="events">
+                <img src="imgs/School_Event.jpg" alt="School event">
+                <div class="overlay">
+                    <div class="caption">School Event</div>
+                    <div class="sub">Celebrations &amp; functions</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="campus">
+                <img src="imgs/school_grounds.jpg" alt="Campus grounds">
+                <div class="overlay">
+                    <div class="caption">Campus Grounds</div>
+                    <div class="sub">Open playing area</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="facilities">
+                <img src="imgs/playground.jpg" alt="Playground">
+                <div class="overlay">
+                    <div class="caption">Playground</div>
+                    <div class="sub">Safe play areas</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="students">
+                <img src="imgs/Teacher_interaction.jpg" alt="Teacher interaction">
+                <div class="overlay">
+                    <div class="caption">Teacher &amp; Students</div>
+                    <div class="sub">Guided learning</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="events">
+                <img src="imgs/Event_Hall.jpg" alt="Event hall">
+                <div class="overlay">
+                    <div class="caption">Event Hall</div>
+                    <div class="sub">Gatherings &amp; shows</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== Lightbox Overlay ===== -->
+    <div class="lightbox-overlay" id="lightbox" aria-hidden="true">
+        <div class="lightbox-content" role="dialog" aria-modal="true" aria-label="Image preview">
+            <button class="lb-close" id="lbClose" aria-label="Close">×</button>
+            <img src="" alt="" id="lbImage">
+            <div class="lightbox-caption" id="lbCaption"></div>
+            <div class="lightbox-controls">
+                <button class="lb-btn" id="lbPrev" aria-label="Previous">‹</button>
+                <button class="lb-btn" id="lbNext" aria-label="Next">›</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Bright Future Public School</h3>
+                <p>Building strong academic foundations and shaping future leaders.</p>
+            </div>
+
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Contact Info</h4>
+                <p>📍 Lahore, Pakistan</p>
+                <p>📞 0300-1234567</p>
+                <p>✉ info@brightfuture.edu.pk</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Bright Future Public School. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Filters
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const items = Array.from(document.querySelectorAll('.gallery-item'));
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelector('.filter-btn.active').classList.remove('active');
+                btn.classList.add('active');
+                const f = btn.getAttribute('data-filter');
+                items.forEach(it => {
+                    if (f === 'all' || it.dataset.category === f) {
+                        it.classList.remove('hidden');
+                    } else {
+                        it.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // Lightbox
+        const lightbox = document.getElementById('lightbox');
+        const lbImage = document.getElementById('lbImage');
+        const lbCaption = document.getElementById('lbCaption');
+        const lbClose = document.getElementById('lbClose');
+        const lbPrev = document.getElementById('lbPrev');
+        const lbNext = document.getElementById('lbNext');
+
+        let visibleItems = () => Array.from(document.querySelectorAll('.gallery-item')).filter(i => !i.classList.contains('hidden'));
+        let currentIndex = 0;
+
+        function openLightbox(index) {
+            const visible = visibleItems();
+            const el = visible[index];
+            if (!el) return;
+            const img = el.querySelector('img');
+            lbImage.src = img.src;
+            lbImage.alt = img.alt;
+            lbCaption.textContent = el.querySelector('.caption').textContent + ' — ' + el.querySelector('.sub').textContent;
+            lightbox.classList.add('open');
+            lightbox.setAttribute('aria-hidden', 'false');
+            currentIndex = index;
+            // focus close button for accessibility
+            lbClose.focus();
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('open');
+            lightbox.setAttribute('aria-hidden', 'true');
+            lbImage.src = '';
+        }
+
+        function showPrev() {
+            const visible = visibleItems();
+            if (visible.length === 0) return;
+            currentIndex = (currentIndex - 1 + visible.length) % visible.length;
+            openLightbox(currentIndex);
+        }
+
+        function showNext() {
+            const visible = visibleItems();
+            if (visible.length === 0) return;
+            currentIndex = (currentIndex + 1) % visible.length;
+            openLightbox(currentIndex);
+        }
+
+        // attach click on items
+        document.getElementById('galleryGrid').addEventListener('click', (e) => {
+            const item = e.target.closest('.gallery-item');
+            if (!item) return;
+            const visible = visibleItems();
+            const index = visible.indexOf(item);
+            openLightbox(index);
+        });
+
+        lbClose.addEventListener('click', closeLightbox);
+        lbPrev.addEventListener('click', (e) => { e.stopPropagation(); showPrev(); });
+        lbNext.addEventListener('click', (e) => { e.stopPropagation(); showNext(); });
+
+        // overlay click to close
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+
+        // keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (lightbox.classList.contains('open')) {
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowLeft') showPrev();
+                if (e.key === 'ArrowRight') showNext();
+            }
+        });
+
+    </script>
+</body>
+
+</html>
