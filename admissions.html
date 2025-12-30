@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions — Bright Future Public School</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="imgs/favicon.svg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ===== Header ===== -->
+    <header class="header">
+        <div class="container nav-container">
+            <h1 class="logo">Bright Future Public School</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="admissions.html" class="active">Admissions</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== Admissions Hero ===== -->
+    <section class="admissions-hero">
+        <div class="container admissions-hero-grid">
+            <div class="admissions-hero-text">
+                <span class="about-tag">Admissions Open 2025</span>
+                <h1>Start Your Child’s Bright Future</h1>
+                <p>Apply for admissions across all classes. Follow the simple steps below and submit your application
+                    online or book a campus visit.</p>
+                <br>
+                <div class="hero-actions">
+                    <a href="#apply" class="btn hero-btn-primary">Apply Online</a>
+                    <a href="#process" class="btn hero-btn-primary">How it Works</a>
+                </div>
+            </div>
+
+            <div class="admissions-hero-visual">
+                <img src="imgs/admission_pic.jpg" alt="Admissions">
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ===== Process Section ===== -->
+    <section id="process" class="admissions-process">
+        <div class="container">
+            <div class="highlights-header">
+                <h2>Admission Process</h2>
+                <p>We've simplified admissions into four clear steps — apply, submit documents, assessment (if required), and enrollment.</p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-num">1</div>
+                    <h4>Submit Application</h4>
+                    <p>Fill the online application form with basic details.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-num">2</div>
+                    <h4>Upload Documents</h4>
+                    <p>Attach birth certificate, previous reports (if any), and CNIC of parent/guardian.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-num">3</div>
+                    <h4>Assessment/Interview</h4>
+                    <p>Short assessment or interview for select classes; dates will be communicated.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-num">4</div>
+                    <h4>Fee & Enrollment</h4>
+                    <p>Pay the fee to confirm admission and receive a welcome pack.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ===== Eligibility & Documents ===== -->
+    <section class="admissions-details">
+        <div class="container details-grid">
+            <div class="docs-card">
+                <h3>Eligibility & Documents</h3>
+                <ul class="docs-list">
+                    <li>Birth Certificate</li>
+                    <li>Previous school report card (if applicable)</li>
+                    <li>Parent/Guardian CNIC or ID</li>
+                    <li>2 passport-size photographs</li>
+                    <li>Completed application form</li>
+                </ul>
+            </div>
+
+            <div id="apply" class="apply-card">
+                <h3>Apply Now</h3>
+                <p class="muted">Complete the form below — we’ll contact you about the next steps.</p>
+
+                <form id="admissionForm" class="application-form" novalidate>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="fullname">Full name</label>
+                            <input id="fullname" name="fullname" required placeholder="Student's full name">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="applyClass">Class Applying For</label>
+                            <select id="applyClass" name="applyClass" required>
+                                <option value="">Choose a class</option>
+                                <option>Playgroup</option>
+                                <option>KG</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group full">
+                            <label for="parentEmail">Parent / Guardian Email</label>
+                            <input type="email" id="parentEmail" name="parentEmail" required placeholder="you@example.com">
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="phone">Phone</label>
+                            <input id="phone" name="phone" placeholder="0300-1234567">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="dob">Date of birth</label>
+                            <input type="date" id="dob" name="dob">
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group full">
+                            <label for="notes">Notes / Additional Info</label>
+                            <textarea id="notes" name="notes" rows="4" placeholder="Allergies, special needs, etc."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group full">
+                            <label for="files">Upload documents (PDF/JPG)</label>
+                            <input type="file" id="files" name="files" multiple accept="application/pdf,image/*">
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn">Submit Application</button>
+                        <div id="appStatus" class="form-status" aria-live="polite"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ===== Fees & Dates ===== -->
+    <section class="fees-dates">
+        <div class="container">
+            <div class="highlights-header">
+                <h2>Fees & Important Dates</h2>
+                <p>Application deadline, assessment dates, and fee structure are shown below.</p>
+            </div>
+
+            <div class="highlights-grid">
+                <div class="highlight-card bg-deadline">
+                    <div class="highlight-content">
+                        <h3>Application Deadline</h3>
+                        <p>31 Jan 2025</p>
+                    </div>
+                </div>
+
+                <div class="highlight-card bg-assessment">
+                    <div class="highlight-content">
+                        <h3>Assessment Dates</h3>
+                        <p>Feb 10 – Feb 20, 2025</p>
+                    </div>
+                </div>
+
+                <div class="highlight-card bg-fees">
+                    <div class="highlight-content">
+                        <h3>Registration Fee</h3>
+                        <p>PKR 2,000 (non-refundable)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ===== FAQ ===== -->
+    <section class="admissions-faq">
+        <div class="container">
+            <div class="highlights-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to the common questions about admissions and enrollment.</p>
+            </div>
+
+            <div class="faq">
+                <button class="faq-item" aria-expanded="false"><span class="faq-text">What is the minimum age for Playgroup?</span><span class="faq-toggle">+</span></button>
+                <div class="faq-panel">Children must be at least 2.5 years old to enroll in Playgroup.</div>
+
+                <button class="faq-item" aria-expanded="false"><span class="faq-text">Can I visit the campus?</span><span class="faq-toggle">+</span></button>
+                <div class="faq-panel">Yes — campus visits are available by appointment. Contact us to schedule a tour.</div>
+
+                <button class="faq-item" aria-expanded="false"><span class="faq-text">Is there a scholarship program?</span><span class="faq-toggle">+</span></button>
+                <div class="faq-panel">We offer limited academic scholarships based on assessment performance.</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Bright Future Public School</h3>
+                <p>Building strong academic foundations and shaping future leaders.</p>
+            </div>
+
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Contact Info</h4>
+                <p>📍 Lahore, Pakistan</p>
+                <p>📞 0300-1234567</p>
+                <p>✉ info@brightfuture.edu.pk</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Bright Future Public School. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple client-side form handling + FAQ toggles (no backend)
+        (function () {
+            // Admissions form
+            const form = document.getElementById('admissionForm');
+            const appStatus = document.getElementById('appStatus');
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                if (!form.checkValidity()) {
+                    form.reportValidity();
+                    return;
+                }
+
+                appStatus.textContent = 'Submitting application...';
+                appStatus.classList.remove('success', 'error');
+
+                setTimeout(() => {
+                    appStatus.textContent = 'Application received. We will contact you shortly.';
+                    appStatus.classList.add('success');
+                    form.reset();
+                }, 900);
+            });
+
+            // FAQ accordion
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const next = this.nextElementSibling;
+                    const open = next.style.maxHeight;
+                    // close all
+                    document.querySelectorAll('.faq-panel').forEach(panel => panel.style.maxHeight = null);
+                    document.querySelectorAll('.faq-item .faq-toggle').forEach(t => t.textContent = '+');
+
+                    if (!open) {
+                        next.style.maxHeight = next.scrollHeight + 'px';
+                        this.querySelector('.faq-toggle').textContent = '−';
+                    }
+                });
+            });
+        })();
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
