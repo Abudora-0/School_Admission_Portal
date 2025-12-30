@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Bright Future Public School</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="imgs/favicon.svg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ===== Header ===== -->
+    <header class="header">
+        <div class="container nav-container">
+            <h1 class="logo">Bright Future Public School</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== Contact Hero ===== -->
+    <section class="contact-hero">
+        <div class="container contact-hero-grid">
+            <div class="contact-hero-text">
+                <span class="about-tag">Get in touch</span>
+                <h1>We're Here to Help — Get in Touch</h1>
+                <p>Questions about admissions, campus visits, or anything else? Send us a message or use the contact details to reach out — our team will respond within 24 hours.</p>
+                <div class="contact-hero-stats">
+                    <div class="stat-card">
+                        <h3>Office Hours</h3>
+                        <span>Mon — Fri: 8:00 — 4:00</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>Visit Us</h3>
+                        <span>By appointment — Campus tours available</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>Response Time</h3>
+                        <span>Within 24 hours</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-hero-visual">
+                <img src="imgs/contact_pic.jpg" alt="Contact us">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== Contact Section ===== -->
+    <section class="contact-section">
+        <div class="container contact-layout">
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <h4>Address</h4>
+                    <p>Lahore, Pakistan</p>
+                </div>
+
+                <div class="contact-card">
+                    <h4>Phone</h4>
+                    <p>0300-1234567</p>
+                </div>
+
+                <div class="contact-card">
+                    <h4>Email</h4>
+                    <p>info@brightfuture.edu.pk</p>
+                </div>
+            </div>
+
+            <div class="contact-main">
+                <div class="contact-form-card">
+                    <h3>Send Us a Message</h3>
+                    <p class="muted">Fill in your details and we'll get back to you shortly.</p>
+
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="name">Full name</label>
+                                <input type="text" id="name" name="name" required minlength="2" placeholder="Your full name">
+                            </div>
+
+                            <div class="input-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="0300-1234567">
+                            </div>
+                        </div>
+
+                        <div class="input-row">
+                            <div class="input-group full">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="you@example.com">
+                            </div>
+                        </div>
+
+                        <div class="input-row">
+                            <div class="input-group full">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="How can we help?"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn">Send Message</button>
+                            <div id="formStatus" class="form-status" aria-live="polite"></div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="map-card">
+                    <h3>Our Location</h3>
+                    <div class="map-placeholder">
+                        <!-- Replace href with real map embed when available -->
+                        <iframe src="https://maps.google.com/maps?q=lahore&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Bright Future Public School</h3>
+                <p>Building strong academic foundations and shaping future leaders.</p>
+            </div>
+
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Contact Info</h4>
+                <p>📍 Lahore, Pakistan</p>
+                <p>📞 0300-1234567</p>
+                <p>✉ info@brightfuture.edu.pk</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Bright Future Public School. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple client-side handling to show a success message without a backend
+        (function () {
+            const form = document.getElementById('contactForm');
+            const status = document.getElementById('formStatus');
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                if (!form.checkValidity()) {
+                    form.reportValidity();
+                    return;
+                }
+
+                // simulate sending
+                status.textContent = 'Sending message...';
+                status.classList.remove('success', 'error');
+
+                setTimeout(() => {
+                    status.textContent = 'Thanks! Your message has been sent.';
+                    status.classList.add('success');
+                    form.reset();
+                }, 900);
+            });
+        })();
+    </script>
+
+</body>
+
+</html>
+
+
+
