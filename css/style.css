@@ -603,11 +603,11 @@
  }
 
  .bg-deadline {
-     background-image: url("../imgs/deadline.jpg");
+     background-image: url("../imgs/Deadline.jpg");
  }
 
  .bg-assessment {
-     background-image: url("../imgs/assessment.jpg");
+     background-image: url("../imgs/Assessment.jpg");
  }
 
  .bg-fees {
@@ -2385,4 +2385,5 @@
          flex-direction: column;
          text-align: center;
      }
+
  }
