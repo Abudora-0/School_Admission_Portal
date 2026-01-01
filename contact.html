@@ -17,6 +17,12 @@
     <!-- ===== Header ===== -->
     <header class="header">
         <div class="container nav-container">
+            <input type="checkbox" id="navToggle" class="nav-toggle" aria-hidden="true">
+            <label for="navToggle" class="nav-hamburger" aria-label="Toggle navigation" role="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             <h1 class="logo">Bright Future Public School</h1>
             <nav>
                 <ul class="nav-links">
@@ -87,7 +93,7 @@
                     <h3>Send Us a Message</h3>
                     <p class="muted">Fill in your details and we'll get back to you shortly.</p>
 
-                    <form id="contactForm" class="contact-form" novalidate>
+                    <form id="contactForm" class="contact-form" action="#contact-thanks" method="get">
                         <div class="input-row">
                             <div class="input-group">
                                 <label for="name">Full name</label>
@@ -119,13 +125,17 @@
                             <div id="formStatus" class="form-status" aria-live="polite"></div>
                         </div>
                     </form>
+
+                    <div id="contact-thanks" class="form-status form-thankyou" aria-hidden="true">
+                        <strong>Thanks!</strong> Your message has been sent.
+                    </div>
                 </div>
 
                 <div class="map-card">
                     <h3>Our Location</h3>
                     <div class="map-placeholder">
                         <!-- Replace href with real map embed when available -->
-                        <iframe src="https://maps.google.com/maps?q=lahore&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="https://maps.google.com/maps?q=lahore&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen loading="lazy" title="Bright Future location"></iframe>
                     </div>
                 </div>
             </div>
@@ -164,31 +174,7 @@
         </div>
     </footer>
 
-    <script>
-        // Simple client-side handling to show a success message without a backend
-        (function () {
-            const form = document.getElementById('contactForm');
-            const status = document.getElementById('formStatus');
 
-            form.addEventListener('submit', function (e) {
-                e.preventDefault();
-                if (!form.checkValidity()) {
-                    form.reportValidity();
-                    return;
-                }
-
-                // simulate sending
-                status.textContent = 'Sending message...';
-                status.classList.remove('success', 'error');
-
-                setTimeout(() => {
-                    status.textContent = 'Thanks! Your message has been sent.';
-                    status.classList.add('success');
-                    form.reset();
-                }, 900);
-            });
-        })();
-    </script>
 
 </body>
 

@@ -14,6 +14,12 @@
     <!-- ===== Header ===== -->
     <header class="header">
         <div class="container nav-container">
+            <input type="checkbox" id="navToggle" class="nav-toggle" aria-hidden="true">
+            <label for="navToggle" class="nav-hamburger" aria-label="Toggle navigation" role="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             <h1 class="logo">Bright Future Public School</h1>
             <nav>
                 <ul class="nav-links">
@@ -46,17 +52,17 @@
 
                     <!-- REFINED STATS -->
                     <div class="about-hero-stats">
-                        <div class="stat-card">
+                        <div class="stat-card in-view">
                             <h3>Academic Levels</h3>
                             <span>Playgroup to Matric</span>
                         </div>
 
-                        <div class="stat-card">
+                        <div class="stat-card in-view">
                             <h3>Learning Focus</h3>
                             <span>Conceptual & Practical</span>
                         </div>
 
-                        <div class="stat-card">
+                        <div class="stat-card in-view">
                             <h3>Campus Safety</h3>
                             <span>Secure & Monitored</span>
                         </div>
@@ -110,15 +116,15 @@
                 <h2 class="section-title">Our Journey</h2>
 
                 <div class="timeline">
-                    <div class="timeline-item">
+                    <div class="timeline-item in-view">
                         <span>2005</span>
                         <p>School founded with a mission to deliver quality education.</p>
                     </div>
-                    <div class="timeline-item">
+                    <div class="timeline-item in-view">
                         <span>2012</span>
                         <p>Expansion of facilities and introduction of modern labs.</p>
                     </div>
-                    <div class="timeline-item">
+                    <div class="timeline-item in-view">
                         <span>2020</span>
                         <p>Recognized for consistent academic excellence.</p>
                     </div>
@@ -161,19 +167,19 @@
                 <span>— Principal</span>
 
                 <div class="team-grid" aria-label="Leadership team">
-                    <div class="team-member">
+                    <div class="team-member in-view">
                         <img src="imgs/Principal.jpg" alt="Principal">
                         <h4>Principal</h4>
                         <p>Visionary leader focused on academic excellence and student welfare.</p>
                     </div>
 
-                    <div class="team-member">
+                    <div class="team-member in-view">
                         <img src="imgs/vice_principal.jpg" alt="Vice Principal">
                         <h4>Vice Principal</h4>
                         <p>Responsible for operations, staff development, and student wellbeing.</p>
                     </div>
 
-                    <div class="team-member">
+                    <div class="team-member in-view">
                         <img src="imgs/Head_Academics.jpg" alt="Head of Academics">
                         <h4>Head of Academics</h4>
                         <p>Leads curriculum improvements and teacher training.</p>
@@ -189,10 +195,10 @@
                 <h2>Our Core Values</h2>
 
                 <div class="values-grid">
-                    <div class="value-item">Excellence in Education</div>
-                    <div class="value-item">Integrity & Respect</div>
-                    <div class="value-item">Discipline & Responsibility</div>
-                    <div class="value-item">Continuous Improvement</div>
+                    <div class="value-item in-view">Excellence in Education</div>
+                    <div class="value-item in-view">Integrity & Respect</div>
+                    <div class="value-item in-view">Discipline & Responsibility</div>
+                    <div class="value-item in-view">Continuous Improvement</div>
                 </div>
             </div>
         </section>
@@ -254,20 +260,7 @@
         </div>
     </footer>
 
-    <script>
-        // Reveal on scroll for timeline, stats and team
-        (function () {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('in-view');
-                    }
-                });
-            }, { threshold: 0.12 });
 
-            document.querySelectorAll('.timeline-item, .stat-card, .team-member, .value-item').forEach(el => observer.observe(el));
-        })();
-    </script>
 
 </body>
 

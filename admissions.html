@@ -17,6 +17,12 @@
     <!-- ===== Header ===== -->
     <header class="header">
         <div class="container nav-container">
+            <input type="checkbox" id="navToggle" class="nav-toggle" aria-hidden="true">
+            <label for="navToggle" class="nav-hamburger" aria-label="Toggle navigation" role="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             <h1 class="logo">Bright Future Public School</h1>
             <nav>
                 <ul class="nav-links">
@@ -109,7 +115,7 @@
                 <h3>Apply Now</h3>
                 <p class="muted">Complete the form below — we’ll contact you about the next steps.</p>
 
-                <form id="admissionForm" class="application-form" novalidate>
+                <form id="admissionForm" class="application-form" action="#app-thanks" method="get">
                     <div class="input-row">
                         <div class="input-group">
                             <label for="fullname">Full name</label>
@@ -174,6 +180,10 @@
                         <div id="appStatus" class="form-status" aria-live="polite"></div>
                     </div>
                 </form>
+
+                <div id="app-thanks" class="form-status form-thankyou" aria-hidden="true">
+                    <strong>Application received.</strong> We will contact you shortly.
+                </div>
             </div>
         </div>
     </section>
@@ -224,14 +234,11 @@
             </div>
 
             <div class="faq">
-                <button class="faq-item" aria-expanded="false"><span class="faq-text">What is the minimum age for Playgroup?</span><span class="faq-toggle">+</span></button>
-                <div class="faq-panel">Children must be at least 2.5 years old to enroll in Playgroup.</div>
+                <details class="faq-item"><summary><span class="faq-text">What is the minimum age for Playgroup?</span></summary><div class="faq-panel">Children must be at least 2.5 years old to enroll in Playgroup.</div></details>
 
-                <button class="faq-item" aria-expanded="false"><span class="faq-text">Can I visit the campus?</span><span class="faq-toggle">+</span></button>
-                <div class="faq-panel">Yes — campus visits are available by appointment. Contact us to schedule a tour.</div>
+                <details class="faq-item"><summary><span class="faq-text">Can I visit the campus?</span></summary><div class="faq-panel">Yes — campus visits are available by appointment. Contact us to schedule a tour.</div></details>
 
-                <button class="faq-item" aria-expanded="false"><span class="faq-text">Is there a scholarship program?</span><span class="faq-toggle">+</span></button>
-                <div class="faq-panel">We offer limited academic scholarships based on assessment performance.</div>
+                <details class="faq-item"><summary><span class="faq-text">Is there a scholarship program?</span></summary><div class="faq-panel">We offer limited academic scholarships based on assessment performance.</div></details>
             </div>
         </div>
     </section>
@@ -269,48 +276,7 @@
         </div>
     </footer>
 
-    <script>
-        // Simple client-side form handling + FAQ toggles (no backend)
-        (function () {
-            // Admissions form
-            const form = document.getElementById('admissionForm');
-            const appStatus = document.getElementById('appStatus');
 
-            form.addEventListener('submit', function (e) {
-                e.preventDefault();
-                if (!form.checkValidity()) {
-                    form.reportValidity();
-                    return;
-                }
-
-                appStatus.textContent = 'Submitting application...';
-                appStatus.classList.remove('success', 'error');
-
-                setTimeout(() => {
-                    appStatus.textContent = 'Application received. We will contact you shortly.';
-                    appStatus.classList.add('success');
-                    form.reset();
-                }, 900);
-            });
-
-            // FAQ accordion
-            const faqItems = document.querySelectorAll('.faq-item');
-            faqItems.forEach(btn => {
-                btn.addEventListener('click', function () {
-                    const next = this.nextElementSibling;
-                    const open = next.style.maxHeight;
-                    // close all
-                    document.querySelectorAll('.faq-panel').forEach(panel => panel.style.maxHeight = null);
-                    document.querySelectorAll('.faq-item .faq-toggle').forEach(t => t.textContent = '+');
-
-                    if (!open) {
-                        next.style.maxHeight = next.scrollHeight + 'px';
-                        this.querySelector('.faq-toggle').textContent = '−';
-                    }
-                });
-            });
-        })();
-    </script>
 
 </body>
 

@@ -17,6 +17,12 @@
     <!-- ===== Header ===== -->
     <header class="header">
         <div class="container nav-container">
+            <input type="checkbox" id="navToggle" class="nav-toggle" aria-hidden="true">
+            <label for="navToggle" class="nav-hamburger" aria-label="Toggle navigation" role="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             <h1 class="logo">Bright Future Public School</h1>
             <nav>
                 <ul class="nav-links">
@@ -40,11 +46,16 @@
                 <p>Explore campus life, facilities, events, and student activities. Click an image to view it larger.</p>
 
                 <div class="gallery-filters" role="tablist" aria-label="Gallery filters">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="campus">Campus</button>
-                    <button class="filter-btn" data-filter="facilities">Facilities</button>
-                    <button class="filter-btn" data-filter="events">Events</button>
-                    <button class="filter-btn" data-filter="students">Students</button>
+                    <input type="radio" name="gallery-filter" id="f-all" class="filter-radio" checked hidden>
+                    <label for="f-all" class="filter-btn">All</label>
+                    <input type="radio" name="gallery-filter" id="f-campus" class="filter-radio" hidden>
+                    <label for="f-campus" class="filter-btn">Campus</label>
+                    <input type="radio" name="gallery-filter" id="f-facilities" class="filter-radio" hidden>
+                    <label for="f-facilities" class="filter-btn">Facilities</label>
+                    <input type="radio" name="gallery-filter" id="f-events" class="filter-radio" hidden>
+                    <label for="f-events" class="filter-btn">Events</label>
+                    <input type="radio" name="gallery-filter" id="f-students" class="filter-radio" hidden>
+                    <label for="f-students" class="filter-btn">Students</label>
                 </div>
             </div>
         </div>
@@ -55,82 +66,150 @@
         <div class="gallery-grid" id="galleryGrid">
 
             <div class="gallery-item" data-category="campus">
-                <img src="imgs/main_campus.jpg" alt="Main campus building">
-                <div class="overlay">
-                    <div class="caption">Main Campus</div>
-                    <div class="sub">Bright Future campus</div>
-                </div>
+                <a href="#img1" class="thumb" aria-label="View Main Campus">
+                    <img src="imgs/main_campus.jpg" alt="Main campus building">
+                    <div class="overlay">
+                        <div class="caption">Main Campus</div>
+                        <div class="sub">Bright Future campus</div>
+                    </div>
+                </a>
             </div>
 
             <div class="gallery-item" data-category="facilities">
-                <img src="imgs/lab.jpg" alt="Science lab">
-                <div class="overlay">
-                    <div class="caption">Science Lab</div>
-                    <div class="sub">Well-equipped labs</div>
-                </div>
+                <a href="#img2" class="thumb" aria-label="View Science Lab">
+                    <img src="imgs/lab.jpg" alt="Science lab">
+                    <div class="overlay">
+                        <div class="caption">Science Lab</div>
+                        <div class="sub">Well-equipped labs</div>
+                    </div>
+                </a>
             </div>
 
             <div class="gallery-item" data-category="students">
-                <img src="imgs/classroom.jpg" alt="Students in class">
-                <div class="overlay">
-                    <div class="caption">In-Class Activity</div>
-                    <div class="sub">Interactive learning</div>
-                </div>
+                <a href="#img3" class="thumb" aria-label="View In-Class Activity">
+                    <img src="imgs/classroom.jpg" alt="Students in class">
+                    <div class="overlay">
+                        <div class="caption">In-Class Activity</div>
+                        <div class="sub">Interactive learning</div>
+                    </div>
+                </a>
             </div>
 
             <div class="gallery-item" data-category="events">
-                <img src="imgs/School_Event.jpg" alt="School event">
-                <div class="overlay">
-                    <div class="caption">School Event</div>
-                    <div class="sub">Celebrations &amp; functions</div>
-                </div>
+                <a href="#img4" class="thumb" aria-label="View School Event">
+                    <img src="imgs/School_Event.jpg" alt="School event">
+                    <div class="overlay">
+                        <div class="caption">School Event</div>
+                        <div class="sub">Celebrations &amp; functions</div>
+                    </div>
+                </a>
             </div>
 
             <div class="gallery-item" data-category="campus">
-                <img src="imgs/school_grounds.jpg" alt="Campus grounds">
-                <div class="overlay">
-                    <div class="caption">Campus Grounds</div>
-                    <div class="sub">Open playing area</div>
-                </div>
+                <a href="#img5" class="thumb" aria-label="View Campus Grounds">
+                    <img src="imgs/school_grounds.jpg" alt="Campus grounds">
+                    <div class="overlay">
+                        <div class="caption">Campus Grounds</div>
+                        <div class="sub">Open playing area</div>
+                    </div>
+                </a>
             </div>
 
             <div class="gallery-item" data-category="facilities">
-                <img src="imgs/playground.jpg" alt="Playground">
-                <div class="overlay">
-                    <div class="caption">Playground</div>
-                    <div class="sub">Safe play areas</div>
-                </div>
+                <a href="#img6" class="thumb" aria-label="View Playground">
+                    <img src="imgs/playground.jpg" alt="Playground">
+                    <div class="overlay">
+                        <div class="caption">Playground</div>
+                        <div class="sub">Safe play areas</div>
+                    </div>
+                </a>
             </div>
 
             <div class="gallery-item" data-category="students">
-                <img src="imgs/Teacher_interaction.jpg" alt="Teacher interaction">
-                <div class="overlay">
-                    <div class="caption">Teacher &amp; Students</div>
-                    <div class="sub">Guided learning</div>
-                </div>
+                <a href="#img7" class="thumb" aria-label="View Teacher & Students">
+                    <img src="imgs/Teacher_interaction.jpg" alt="Teacher interaction">
+                    <div class="overlay">
+                        <div class="caption">Teacher &amp; Students</div>
+                        <div class="sub">Guided learning</div>
+                    </div>
+                </a>
             </div>
 
             <div class="gallery-item" data-category="events">
-                <img src="imgs/Event_Hall.jpg" alt="Event hall">
-                <div class="overlay">
-                    <div class="caption">Event Hall</div>
-                    <div class="sub">Gatherings &amp; shows</div>
-                </div>
+                <a href="#img8" class="thumb" aria-label="View Event Hall">
+                    <img src="imgs/Event_Hall.jpg" alt="Event hall">
+                    <div class="overlay">
+                        <div class="caption">Event Hall</div>
+                        <div class="sub">Gatherings &amp; shows</div>
+                    </div>
+                </a>
             </div>
 
         </div>
     </section>
 
-    <!-- ===== Lightbox Overlay ===== -->
-    <div class="lightbox-overlay" id="lightbox" aria-hidden="true">
-        <div class="lightbox-content" role="dialog" aria-modal="true" aria-label="Image preview">
-            <button class="lb-close" id="lbClose" aria-label="Close">×</button>
-            <img src="" alt="" id="lbImage">
-            <div class="lightbox-caption" id="lbCaption"></div>
-            <div class="lightbox-controls">
-                <button class="lb-btn" id="lbPrev" aria-label="Previous">‹</button>
-                <button class="lb-btn" id="lbNext" aria-label="Next">›</button>
-            </div>
+    <!-- ===== CSS Lightboxes ===== -->
+    <div id="img1" class="lightbox" aria-hidden="true">
+        <div class="lightbox-inner">
+            <a href="#" class="lb-close" aria-label="Close">×</a>
+            <img src="imgs/main_campus.jpg" alt="Main Campus">
+            <p class="lb-caption">Main Campus — Bright Future campus</p>
+        </div>
+    </div>
+
+    <div id="img2" class="lightbox" aria-hidden="true">
+        <div class="lightbox-inner">
+            <a href="#" class="lb-close" aria-label="Close">×</a>
+            <img src="imgs/lab.jpg" alt="Science Lab">
+            <p class="lb-caption">Science Lab — Well-equipped labs</p>
+        </div>
+    </div>
+
+    <div id="img3" class="lightbox" aria-hidden="true">
+        <div class="lightbox-inner">
+            <a href="#" class="lb-close" aria-label="Close">×</a>
+            <img src="imgs/classroom.jpg" alt="In-Class Activity">
+            <p class="lb-caption">In-Class Activity — Interactive learning</p>
+        </div>
+    </div>
+
+    <div id="img4" class="lightbox" aria-hidden="true">
+        <div class="lightbox-inner">
+            <a href="#" class="lb-close" aria-label="Close">×</a>
+            <img src="imgs/School_Event.jpg" alt="School Event">
+            <p class="lb-caption">School Event — Celebrations &amp; functions</p>
+        </div>
+    </div>
+
+    <div id="img5" class="lightbox" aria-hidden="true">
+        <div class="lightbox-inner">
+            <a href="#" class="lb-close" aria-label="Close">×</a>
+            <img src="imgs/school_grounds.jpg" alt="Campus Grounds">
+            <p class="lb-caption">Campus Grounds — Open playing area</p>
+        </div>
+    </div>
+
+    <div id="img6" class="lightbox" aria-hidden="true">
+        <div class="lightbox-inner">
+            <a href="#" class="lb-close" aria-label="Close">×</a>
+            <img src="imgs/playground.jpg" alt="Playground">
+            <p class="lb-caption">Playground — Safe play areas</p>
+        </div>
+    </div>
+
+    <div id="img7" class="lightbox" aria-hidden="true">
+        <div class="lightbox-inner">
+            <a href="#" class="lb-close" aria-label="Close">×</a>
+            <img src="imgs/Teacher_interaction.jpg" alt="Teacher &amp; Students">
+            <p class="lb-caption">Teacher &amp; Students — Guided learning</p>
+        </div>
+    </div>
+
+    <div id="img8" class="lightbox" aria-hidden="true">
+        <div class="lightbox-inner">
+            <a href="#" class="lb-close" aria-label="Close">×</a>
+            <img src="imgs/Event_Hall.jpg" alt="Event Hall">
+            <p class="lb-caption">Event Hall — Gatherings &amp; shows</p>
         </div>
     </div>
 
@@ -166,100 +245,7 @@
         </div>
     </footer>
 
-    <script>
-        // Filters
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const items = Array.from(document.querySelectorAll('.gallery-item'));
 
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelector('.filter-btn.active').classList.remove('active');
-                btn.classList.add('active');
-                const f = btn.getAttribute('data-filter');
-                items.forEach(it => {
-                    if (f === 'all' || it.dataset.category === f) {
-                        it.classList.remove('hidden');
-                    } else {
-                        it.classList.add('hidden');
-                    }
-                });
-            });
-        });
-
-        // Lightbox
-        const lightbox = document.getElementById('lightbox');
-        const lbImage = document.getElementById('lbImage');
-        const lbCaption = document.getElementById('lbCaption');
-        const lbClose = document.getElementById('lbClose');
-        const lbPrev = document.getElementById('lbPrev');
-        const lbNext = document.getElementById('lbNext');
-
-        let visibleItems = () => Array.from(document.querySelectorAll('.gallery-item')).filter(i => !i.classList.contains('hidden'));
-        let currentIndex = 0;
-
-        function openLightbox(index) {
-            const visible = visibleItems();
-            const el = visible[index];
-            if (!el) return;
-            const img = el.querySelector('img');
-            lbImage.src = img.src;
-            lbImage.alt = img.alt;
-            lbCaption.textContent = el.querySelector('.caption').textContent + ' — ' + el.querySelector('.sub').textContent;
-            lightbox.classList.add('open');
-            lightbox.setAttribute('aria-hidden', 'false');
-            currentIndex = index;
-            // focus close button for accessibility
-            lbClose.focus();
-        }
-
-        function closeLightbox() {
-            lightbox.classList.remove('open');
-            lightbox.setAttribute('aria-hidden', 'true');
-            lbImage.src = '';
-        }
-
-        function showPrev() {
-            const visible = visibleItems();
-            if (visible.length === 0) return;
-            currentIndex = (currentIndex - 1 + visible.length) % visible.length;
-            openLightbox(currentIndex);
-        }
-
-        function showNext() {
-            const visible = visibleItems();
-            if (visible.length === 0) return;
-            currentIndex = (currentIndex + 1) % visible.length;
-            openLightbox(currentIndex);
-        }
-
-        // attach click on items
-        document.getElementById('galleryGrid').addEventListener('click', (e) => {
-            const item = e.target.closest('.gallery-item');
-            if (!item) return;
-            const visible = visibleItems();
-            const index = visible.indexOf(item);
-            openLightbox(index);
-        });
-
-        lbClose.addEventListener('click', closeLightbox);
-        lbPrev.addEventListener('click', (e) => { e.stopPropagation(); showPrev(); });
-        lbNext.addEventListener('click', (e) => { e.stopPropagation(); showNext(); });
-
-        // overlay click to close
-        lightbox.addEventListener('click', (e) => {
-            if (e.target === lightbox) closeLightbox();
-        });
-
-        // keyboard navigation
-        document.addEventListener('keydown', (e) => {
-            if (lightbox.classList.contains('open')) {
-                if (e.key === 'Escape') closeLightbox();
-                if (e.key === 'ArrowLeft') showPrev();
-                if (e.key === 'ArrowRight') showNext();
-            }
-        });
-
-    </script>
 </body>
 
 </html>
