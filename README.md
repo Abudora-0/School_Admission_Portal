@@ -19,6 +19,30 @@ The project focuses on clean design, responsive layout, and structured content p
 
 ---
 
+
+## Project Files
+
+- 📄 **Project Report (Word):**  
+  [AICT_Project_Report.docx](Reports/AICT_Project_Report.docx)
+
+- 📊 **Data Analysis (Excel):**  
+  [AICT_Project_Data.xlsx](Reports/School_Admission_Portal_Data.xlsx)
+
+- 📽️ **Presentation (PowerPoint):**  
+  [AICT_Project_Presentation.pptx](docs/AICT_Project_Presentation.pptx)
+
+---
+
+## Screenshots
+
+- Website Home Page  
+  ![Home Page](screenshots/website_home.png)
+
+- Excel Dashboard  
+  ![Excel Dashboard](screenshots/excel_dashboard.png)
+
+---
+
 ## 🛠️ Technologies Used
 
 - **HTML5** – Structure and content
