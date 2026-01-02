@@ -25,6 +25,7 @@ The project focuses on clean design, responsive layout, and structured content p
 - **CSS3** – Styling, layout, and responsiveness
 - **Microsoft Excel** – Data analysis, calculations, and dashboard
 - **GitHub Pages** – Website hosting and version control
+- **Unsplash** - For Images used in Website
 
 ---
 
@@ -68,8 +69,8 @@ https://abudora-0.github.io/School_Admission_Portal/
 - **Member 1:** Abdullah Akbar (Roll No 212)
 - **Member 2:** Sarim Sajjad (Roll No 191)
 - **Member 3:** Ali Khalid (Roll No 220)
-- **Member 4:** Maaz Hassan (Roll No )
-- **Member 5:** Mujtaba Imtiaz (Roll No)
+- **Member 4:** Maaz Hassan (Roll No 202 )
+- **Member 5:** Mujtaba Imtiaz (Roll No 192)
 
 ---
 
