@@ -1,4 +1,4 @@
-# School_Admission_Portal
+# School Admission Portal
 
 
 **AICT Lab Project – Group Repository**
