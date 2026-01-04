@@ -36,10 +36,10 @@ The project focuses on clean design, responsive layout, and structured content p
 ## Screenshots
 
 - Website Home Page  
-  ![Home Page](screenshots/website_home.png)
+  ![Home Page](Screenshots/Home_Page(1).png)
 
 - Excel Dashboard  
-  ![Excel Dashboard](screenshots/excel_dashboard.png)
+  ![Excel Dashboard](Screenshots/Dashboard.png)
 
 ---
 
