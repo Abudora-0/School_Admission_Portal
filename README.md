@@ -14,6 +14,7 @@ This website provides a digital platform for a school to:
 - Display admission details
 - Showcase campus facilities through a gallery
 - Allow parents and students to contact the school easily
+- To promote Online Admission so that every student can study at ease
 
 The project focuses on clean design, responsive layout, and structured content presentation.
 
@@ -47,9 +48,11 @@ The project focuses on clean design, responsive layout, and structured content p
 
 - **HTML5** – Structure and content
 - **CSS3** – Styling, layout, responsiveness and attractiveness as well
+- **Microsoft Word** - To demonstate about oue wonderful project
 - **Microsoft Excel** – Data analysis, calculations, and dashboard
 - **GitHub Pages** – Website hosting and version control
 - **Unsplash** - For Images used in Website
+  
 
 ---
 
@@ -94,7 +97,7 @@ https://abudora-0.github.io/School_Admission_Portal/
 - **Member 2:** Sarim Sajjad (Roll No 191)
 - **Member 3:** Ali Khalid (Roll No 220)
 - **Member 4:** Maaz Hassan (Roll No 202 )
-- **Member 5:** Mujtaba Imtiaz (Roll No 192)
+- **Member 5:** Muhammad  Mujtaba Imtiaz (Roll No 192)
 
 ---
 
@@ -121,7 +124,7 @@ No additional software or server is required.
 ##  License
 
 This project is developed for **Academic purposes only** as part of the AICT Lab course.
-By University of Engineering and technology.
+By University of Engineering and technology(MAIN CAMPUS).
 
 ---
 
