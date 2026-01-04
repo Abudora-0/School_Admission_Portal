@@ -3,7 +3,7 @@
 
 **AICT Lab Project – Group Repository**
 
-The School Admission Portal is a static, responsive website developed as part of the *Applications of Information and Communication Technology (AICT)* lab course. The project demonstrates the use of modern web technologies to present school information and manage admission-related details through a user-friendly interface.
+The School Admission Portal is a static, responsive website developed as part of the *Applications of Information and Communication Technology (AICT)* lab course by Instructor Miss Ramsha Khalid. The project demonstrates the use of modern web technologies to present school information and manage admission-related details through a user-friendly interface.
 
 ---
 
@@ -46,7 +46,7 @@ The project focuses on clean design, responsive layout, and structured content p
 ##  Technologies Used
 
 - **HTML5** – Structure and content
-- **CSS3** – Styling, layout, and responsiveness
+- **CSS3** – Styling, layout, responsiveness and attractiveness as well
 - **Microsoft Excel** – Data analysis, calculations, and dashboard
 - **GitHub Pages** – Website hosting and version control
 - **Unsplash** - For Images used in Website
@@ -120,7 +120,8 @@ No additional software or server is required.
 
 ##  License
 
-This project is developed for **academic purposes only** as part of the AICT Lab course.
+This project is developed for **Academic purposes only** as part of the AICT Lab course.
+By University of Engineering and technology.
 
 ---
 
