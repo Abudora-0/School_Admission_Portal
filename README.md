@@ -7,7 +7,7 @@ The School Admission Portal is a static, responsive website developed as part of
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This website provides a digital platform for a school to:
 - Present institutional information
@@ -22,10 +22,10 @@ The project focuses on clean design, responsive layout, and structured content p
 
 ## Project Files
 
-- 📄 **Project Report (Word):**  
+-  **Project Report (Word):**  
   [AICT_Project_Report.docx](Reports/AICT_Project_Report.docx)
 
-- 📊 **Data Analysis (Excel):**  
+-  **Data Analysis (Excel):**  
   [AICT_Project_Data.xlsx](Reports/School_Admission_Portal_Data.xlsx)
 
 - 📽️ **Presentation (PowerPoint):**  
@@ -43,7 +43,7 @@ The project focuses on clean design, responsive layout, and structured content p
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **HTML5** – Structure and content
 - **CSS3** – Styling, layout, and responsiveness
@@ -53,7 +53,7 @@ The project focuses on clean design, responsive layout, and structured content p
 
 ---
 
-## 📂 Website Structure
+##  Website Structure
 
 | Page | Description |
 |----|----|
@@ -65,7 +65,7 @@ The project focuses on clean design, responsive layout, and structured content p
 
 ---
 
-## 📊 Data & Analysis
+##  Data & Analysis
 
 The project includes an Excel workbook that contains:
 - Raw admission data
@@ -79,16 +79,16 @@ All data used in Excel matches the figures presented on the website and in the p
 
 ---
 
-## 🌐 Live Website
+##  Live Website
 
 The website is hosted using **GitHub Pages** and can be accessed here:
 
-🔗 **Live URL:**  
+**Live URL:**  
 https://abudora-0.github.io/School_Admission_Portal/
 
 ---
 
-## 👥 Group Members
+##  Group Members
 
 - **Member 1:** Abdullah Akbar (Roll No 212)
 - **Member 2:** Sarim Sajjad (Roll No 191)
@@ -98,7 +98,7 @@ https://abudora-0.github.io/School_Admission_Portal/
 
 ---
 
-## 📖 How to Run Locally
+##  How to Run Locally
 
 1. Clone or download this repository
 2. Open `index.html` in any modern web browser
@@ -108,7 +108,7 @@ No additional software or server is required.
 
 ---
 
-## 🧠 Learning Outcomes
+##  Learning Outcomes
 
 - Practical application of AICT concepts
 - Understanding of responsive web design
@@ -118,7 +118,7 @@ No additional software or server is required.
 
 ---
 
-## 📜 License
+##  License
 
 This project is developed for **academic purposes only** as part of the AICT Lab course.
 
