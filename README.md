@@ -23,13 +23,13 @@ The project focuses on clean design, responsive layout, and structured content p
 ## Project Files
 
 -  **Project Report (Word):**  
-  [AICT_Project_Report.docx](Reports/AICT_Project_Report.docx)
+  [AICT_Project_Report.docx](Reports/School_Admission_Portal_Report.docx)
 
 -  **Data Analysis (Excel):**  
   [AICT_Project_Data.xlsx](Reports/School_Admission_Portal_Data.xlsx)
 
 - 📽️ **Presentation (PowerPoint):**  
-  [AICT_Project_Presentation.pptx](docs/AICT_Project_Presentation.pptx)
+  [AICT_Project_Presentation.pptx](Reports/School_Admission_Portal_Presentation.pptx)
 
 ---
 
